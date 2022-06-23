@@ -79,17 +79,7 @@ class UpdateComponent extends Component {
   }
 
   alertDialog=()=>{
-    Alert.alert(
-      'Delete',
-      'Really?',
-      [
-        {text: 'Yes', onPress: () => this.deleteLivraria()},
-        {text: 'No', onPress: () => console.log('Item not deleted'), style: 'cancel'},
-      ],
-      { 
-        cancelable: true
-      }
-    );
+    this.deleteLivraria()
   }
   
   render() {
